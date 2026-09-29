@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clean Limpieza LR | Productos de limpieza</title>
+<meta name="description" content="Clean Limpieza LR: productos de limpieza, hogar e higiene en San José de Tateposco, Guadalajara, Jalisco.">
+<style>
+:root{--blue:#0b4ea2;--blue2:#0d73cf;--pink:#ed1970;--yellow:#ffd21c;--ink:#17324d;--bg:#f5f9ff;--green:#18a957}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+header{position:sticky;top:0;z-index:10;background:linear-gradient(135deg,#062e69,#0d73cf);color:white;box-shadow:0 2px 12px #0003}
+.nav{max-width:1100px;margin:auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:900;font-size:1.2rem} .logo small{display:block;font-size:.7rem;opacity:.85}
+nav a{color:#fff;text-decoration:none;font-weight:700;margin-left:16px}
+.hero{background:linear-gradient(135deg,#0b4ea2,#e8f6ff);color:white;padding:48px 20px}
+.hero-inner{max-width:1100px;margin:auto;display:grid;grid-template-columns:1fr .85fr;gap:28px;align-items:center}
+.hero h1{font-size:clamp(2.3rem,6vw,4.5rem);line-height:.98;margin:15px 0}
+.hero p{font-size:1.08rem} .hero img{width:100%;border-radius:20px;box-shadow:0 12px 30px #001b3d55}
+.badge{display:inline-block;background:var(--yellow);color:#102c50;font-weight:900;padding:7px 12px;border-radius:999px}
+.btn,.mini-btn{display:inline-block;text-decoration:none;font-weight:900;border-radius:12px;padding:12px 17px;margin:6px 7px 0 0}
+.btn-wa,.mini-btn{background:var(--green);color:#fff} .btn-light{background:#fff;color:var(--blue)}
+section{max-width:1100px;margin:auto;padding:48px 20px} h2{text-align:center;color:var(--blue);font-size:2rem;margin:0 0 10px}
+.sub{text-align:center;max-width:750px;margin:0 auto 28px}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.product{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 4px 18px #1232;display:flex;flex-direction:column}
+.product img{width:100%;aspect-ratio:1/1;object-fit:cover;background:white}
+.product-body{padding:17px} .product h3{margin:0;color:var(--pink)} .product p{margin:7px 0 10px}
+.galleries{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.gallery-card{background:white;border-radius:18px;padding:12px;box-shadow:0 4px 18px #1232}
+.gallery-card img{width:100%;border-radius:12px;display:block;cursor:zoom-in}
+.gallery-card h3{margin:8px 5px 3px;color:var(--blue)}
+.contact{background:#083c83;color:#fff;max-width:none;text-align:center;padding:42px 20px}
+.contact h2{color:#fff} footer{background:#062c60;color:#dcecff;text-align:center;padding:22px}
+#lightbox{display:none;position:fixed;inset:0;background:#000d;z-index:100;align-items:center;justify-content:center;padding:20px}
+#lightbox.open{display:flex} #lightbox img{max-width:95vw;max-height:92vh;border-radius:12px;box-shadow:0 8px 35px #000}
+.close{position:fixed;right:18px;top:12px;color:white;font-size:38px;cursor:pointer;font-weight:700}
+@media(max-width:800px){.hero-inner{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,1fr)}.galleries{grid-template-columns:1fr}nav a{display:none}}
+@media(max-width:520px){.products{grid-template-columns:1fr}}
+
+.order-panel{margin:30px auto 0;background:#fff;border-radius:18px;padding:20px;box-shadow:0 5px 22px #1232;max-width:850px;border:2px solid #dcecff}
+.order-panel>div:first-child{display:flex;justify-content:space-between;gap:10px;align-items:center;color:#0b4ea2;font-size:1.15rem}
+#orderCount{font-size:.9rem;color:#60758a;font-weight:700}
+#orderList{margin:15px 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+#orderList li{background:#eef6ff;border-radius:999px;padding:7px 11px;font-size:.9rem}
+#orderList .empty{background:#f5f5f5;color:#687786}
+.order-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.clear-btn{border:0;background:#eee;color:#333;border-radius:10px;padding:12px 15px;font-weight:800;cursor:pointer}
+.add-btn{border:0;cursor:pointer;font-family:inherit}
+.add-btn.selected{background:#0b4ea2}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<div class="logo">CLEAN LIMPIEZA LR<small>Productos de limpieza</small></div>
+<nav><a href="#productos">Productos</a><a href="#catalogos">Catálogos</a><a href="#contacto">Contacto</a></nav>
+</div></header>
+
+<section class="hero"><div class="hero-inner">
+<div>
+<span class="badge">🧼 Hogar · Limpieza · Higiene</span>
+<h1>¡Limpieza y ahorro para tu hogar!</h1>
+<p>Cloro, desengrasantes, suavizantes, fabuloso, detergentes, escobas, trapeadores y mucho más.</p>
+<p><strong>📍 San José de Tateposco, Guadalajara, Jalisco</strong><br>🕗 8:00 a.m. a 5:00 p.m.</p>
+<a class="btn btn-wa" href="https://wa.me/523326914271?text=Hola%2C%20quiero%20consultar%20precios%20y%20disponibilidad%20de%20productos%20de%20limpieza." target="_blank">💬 Pedir por WhatsApp</a>
+<a class="btn btn-light" href="#productos">Ver productos</a>
+</div>
+<img src="domicilio.jpg" alt="Clean Limpieza LR">
+</div></section>
+
+<section id="productos">
+<h2>Productos destacados</h2>
+<p class="sub">Cada producto tiene su propia imagen. <strong>Consulta el precio y disponibilidad</strong> por WhatsApp.</p>
+<div class="products" id="productGrid"><article class="product">
+      <img src="cloro.jpg" alt="Cloro">
+      <div class="product-body">
+        <h3>Cloro</h3><p>Cloro para limpieza y desinfección.</p>
+        <button class="mini-btn add-btn" type="button" data-product="Cloro">➕ Agregar al pedido</button>
+      </div>
+    </article>
+<article class="product">
+      <img src="roma.jpg" alt="Jabón Roma">
+      <div class="product-body">
+        <h3>Jabón Roma</h3><p>Detergente en polvo Roma.</p>
+        <button class="mini-btn add-btn" type="button" data-product="Jabón Roma">➕ Agregar al pedido</button>
+      </div>
+    </article>
+<article class="product">
+      <img src="ariel.jpg" alt="Jabón Ariel">
+      <div class="product-body">
+        <h3>Jabón Ariel</h3><p>Detergente Ariel.</p>
+        <button class="mini-btn add-btn" type="button" data-product="Jabón Ariel">➕ Agregar al pedido</button>
+      </div>
+    </article>
+<article class="product">
+      <img src="sarrigel.jpg" alt="Sarrigel">
+      <div class="product-body">
+        <h3>Sarrigel</h3><p>Limpiador Sarrigel.</p>
+        <button class="mini-btn add-btn" type="button" data-product="Sarrigel">➕ Agregar al pedido</button>
+      </div>
+    </article>
+<article class="product">
+      <img src="escoba_romana.jpg" alt="Escoba romana">
+      <div class="product-body">
+        <h3>Escoba romana</h3><p>Escoba para uso en el hogar.</p>
+        <button class="mini-btn add-btn" type="button" data-product="Escoba romana">➕ Agregar al pedido</button>
+      </div>
+    </article>
+<article class="product">
+      <img src="escoba_rudo.jpg" alt="Escoba uso rudo">
+      <div class="product-body">
+        <h3>Escoba uso rudo</h3><p>Escoba para limpieza pesada.</p>
+        <button class="mini-btn add-btn" type="button" data-product="Escoba uso rudo">➕ Agregar al pedido</button>
+      </div>
+    </article>
+<article class="product">
+      <img src="escoba_corta.jpg" alt="Escoba uso rudo corta">
+      <div class="product-body">
+        <h3>Escoba uso rudo corta</h3><p>Escoba de uso rudo corta.</p>
+        <button class="mini-btn add-btn" type="button" data-product="Escoba uso rudo corta">➕ Agregar al pedido</button>
+      </div>
+    </article>
+<article class="product">
+      <img src="trapeador_caramelo.jpg" alt="Trapeador Hilalza Caramelo">
+      <div class="product-body">
+        <h3>Trapeador Hilalza Caramelo</h3><p>Trapeador tipo hilaza.</p>
+        <button class="mini-btn add-btn" type="button" data-product="Trapeador Hilalza Caramelo">➕ Agregar al pedido</button>
+      </div>
+    </article>
+<article class="product">
+      <img src="trapeador_blanco.jpg" alt="Trapeador pabilo blanco">
+      <div class="product-body">
+        <h3>Trapeador pabilo blanco</h3><p>Trapeador de pabilo blanco.</p>
+        <button class="mini-btn add-btn" type="button" data-product="Trapeador pabilo blanco">➕ Agregar al pedido</button>
+      </div>
+    </article></div>
+
+<div class="order-panel" id="pedido">
+  <div>
+    <strong>🛒 Mi pedido</strong>
+    <span id="orderCount">0 productos</span>
+  </div>
+  <ul id="orderList"><li class="empty">Todavía no has agregado productos.</li></ul>
+  <div class="order-actions">
+    <button class="clear-btn" type="button" id="clearOrder">Vaciar pedido</button>
+    <a class="btn btn-wa" id="sendOrder" href="#" target="_blank">📲 Enviar pedido por WhatsApp</a>
+  </div>
+</div>
+</section>
+
+<section id="catalogos">
+<h2>Inventario y combos</h2>
+<p class="sub">Toca cualquiera de las imágenes para verla en grande.</p>
+<div class="galleries">
+<div class="gallery-card"><img class="zoomable" src="inventario.jpg" alt="Inventario de productos"><h3>📋 Inventario</h3><p>Consulta la variedad de productos disponibles.</p></div>
+<div class="gallery-card"><img class="zoomable" src="combos.jpg" alt="Combos de limpieza"><h3>🧼 Combos y promociones</h3><p>¡Ahorra comprando en combo!</p></div>
+<div class="gallery-card"><img class="zoomable" src="catalogo.jpg" alt="Catálogo de productos"><h3>🛒 Catálogo</h3><p>Más productos de limpieza, hogar e higiene.</p></div>
+<div class="gallery-card"><img class="zoomable" src="domicilio.jpg" alt="Productos y servicio a domicilio"><h3>🚚 Servicio</h3><p>Pregunta por el servicio a domicilio.</p></div>
+</div>
+</section>
+
+<section class="contact" id="contacto">
+<h2>¿Quieres hacer un pedido?</h2>
+<p>Escríbenos para consultar precios, disponibilidad y opciones de entrega.</p>
+<a class="btn btn-wa" href="https://wa.me/523326914271?text=Hola%2C%20quiero%20consultar%20precios%20y%20disponibilidad%20de%20productos%20de%20limpieza." target="_blank">📲 WhatsApp: 332 691 4271</a>
+<p>📍 San José de Tateposco, Guadalajara, Jalisco · 🕗 8:00 a.m. a 5:00 p.m.</p>
+</section>
+
+<footer><strong>CLEAN LIMPIEZA LR</strong> · Productos de limpieza, hogar e higiene<br><small>Precios y disponibilidad sujetos a cambios. Consulta antes de comprar.</small></footer>
+
+<div id="lightbox" aria-label="Imagen ampliada"><span class="close" onclick="closeBox()">×</span><img id="lightboxImg" src="" alt="Imagen ampliada"></div>
+<script>
+document.querySelectorAll('.zoomable').forEach(img => {
+  img.addEventListener('click', () => {
+    document.getElementById('lightboxImg').src = img.src;
+    document.getElementById('lightbox').classList.add('open');
+  });
+});
+function closeBox() { document.getElementById('lightbox').classList.remove('open'); }
+document.getElementById('lightbox').addEventListener('click', e => { if(e.target.id==='lightbox') closeBox(); });
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeBox(); });
+</script>
+
+<script>
+const order = [];
+const list = document.getElementById('orderList');
+const count = document.getElementById('orderCount');
+const send = document.getElementById('sendOrder');
+
+function renderOrder(){
+  list.innerHTML = '';
+  if(order.length === 0){
+    list.innerHTML = '<li class="empty">Todavía no has agregado productos.</li>';
+  } else {
+    order.forEach((name, i) => {
+      const li = document.createElement('li');
+      li.textContent = name + ' ×1';
+      li.title = 'Toca para quitar';
+      li.style.cursor = 'pointer';
+      li.onclick = () => { order.splice(i,1); renderOrder(); updateButtons(); };
+      list.appendChild(li);
+    });
+  }
+  count.textContent = order.length + (order.length === 1 ? ' producto' : ' productos');
+  const message = order.length
+    ? 'Hola, Clean Limpieza LR. Quiero consultar disponibilidad y precio de: ' + order.map(x => '• ' + x).join('\\n')
+    : 'Hola, quiero consultar precios y disponibilidad de productos de limpieza.';
+  send.href = 'https://wa.me/523326914271?text=' + encodeURIComponent(message);
+}
+function updateButtons(){
+  document.querySelectorAll('.add-btn').forEach(btn => {
+    const selected = order.includes(btn.dataset.product);
+    btn.classList.toggle('selected', selected);
+    btn.textContent = selected ? '✓ Agregado' : '➕ Agregar al pedido';
+  });
+}
+document.querySelectorAll('.add-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const name = btn.dataset.product;
+    const i = order.indexOf(name);
+    if(i >= 0) order.splice(i,1); else order.push(name);
+    renderOrder(); updateButtons();
+    document.getElementById('pedido').scrollIntoView({behavior:'smooth', block:'center'});
+  });
+});
+document.getElementById('clearOrder').addEventListener('click', () => {
+  order.length = 0; renderOrder(); updateButtons();
+});
+renderOrder();
+</script>
+
+</body>
+</html>
